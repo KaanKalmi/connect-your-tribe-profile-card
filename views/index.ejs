@@ -1,14 +1,17 @@
 <%- include('./partials/head') %>
-
-<article>
+<section class="back">
+  <img src="<%= data.avatar %>">
   <header>
-    <h1>Hallo</h1>
-    <p>mijn naam is</p>
+    <h1> <%= data.name %> <%= data.surname %>  </h1>
   </header>
-
-  <p><%= data.name %></p>
-
-  <footer></footer>
-</article>
+  <ul>
+   <li> 🎓 Student bij HvA </li>
+   <li> 🎨 ambitieuze Front-end Developer </li>
+   <li> 📈 Resultaat gericht</li>
+  </ul>
+  <blockquote>It may seem difficult at first, but all things are difficult at first. 
+    <cite> ~Miyamoto Musashi </cite>
+  </blockquote>
+  </section>
 
 <%- include('./partials/foot') %>

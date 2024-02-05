@@ -1,52 +1,101 @@
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
-  font-family: Helvetica, Arial, sans-serif;
-  background: silver;
-}
-
-header {
-  padding: 0.5rem;
-  background: red;
-  color: white;
-
-  h1 {
-    text-transform: uppercase;
-  }
-}
-
-article {
-  display: flex;
-  flex-flow: column;
-  justify-content: space-between;
-  width: 12rem;
-  aspect-ratio: 1/1;
-  border-radius: 0.5rem;
+  height: 100vh;
   overflow: hidden;
-  background: white;
-  text-align: center;
-  transform-origin: center;
-  transform: rotate(2deg);
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  > p {
-    font-size: 2rem;
-    font-family: 'Permanent Marker', cursive;
-    transform-origin: center;
-    transform: rotate(-6deg);
-    word-break: break-all;
-  }
+  background: #171717;
+  color: #fefefe;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-footer {
-  height: 1rem;
-  background: red;
+h1 {
+  font-size: 2em;
+  font-weight: bold;
 }
+
+H2{
+  text-align: center;
+  font-weight: light;
+}
+ul {
+  font-weight: lighter;
+  font-size: 1.2em;
+  text-decoration: none;
+  list-style: none;
+}
+
+blockquote {
+  font-weight: lighter;
+  font-size: 1em;
+  max-width: 30ch;
+  text-align: center;
+  text-wrap:balance;
+}
+
+cite{
+  display: block;
+}
+img {
+  height: 250px;
+  width: 250px;
+  border-radius: 20px;
+  object-fit: fill;
+}
+
+.container {
+  width: 350px;
+  height: 500px;
+  perspective: 800px;
+}
+
+.container:hover>.card {
+  cursor: grabbing;
+  transform: rotateY(-540deg);
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  border: 2px solid;
+  border-radius: 32px;
+  border-color: #FEFEFE;
+  transition: transform 1000ms;
+  transform-style: preserve-3d;
+}
+
+.front, .back {
+  height: 100%;
+  width: 100%;
+  border-radius: 2rem;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front {
+  background: #121212;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+.back {
+  background: #121212;
+  transform: rotateY(-180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  gap: 2em;
+}
+
