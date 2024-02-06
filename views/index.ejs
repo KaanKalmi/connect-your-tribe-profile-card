@@ -1,17 +1,15 @@
 <%- include('./partials/head') %>
-<section class="back">
-  <img src="<%= data.avatar %>">
-  <header>
-    <h1> <%= data.name %> <%= data.surname %>  </h1>
-  </header>
-  <ul>
-   <li> 🎓 Student bij HvA </li>
-   <li> 🎨 ambitieuze Front-end Developer </li>
-   <li> 📈 Resultaat gericht</li>
-  </ul>
-  <blockquote>It may seem difficult at first, but all things are difficult at first. 
-    <cite> ~Miyamoto Musashi </cite>
-  </blockquote>
+  <section class="back">
+    <img src="<%= data.avatar %>">
+    <header>
+      <h1> <%= data.name %> <%= data.prefix %> <%= data.surname %> </h1>
+    </header>
+    <ul>
+      <li><a href="tel:<%= data.phone_number %>"> <%= data.phone_number%> </a></li>
+      <li><a href="mailto:<%= data.email %>"> <%= data.email %> </a></li>
+      <li><a href="https://github.com/KaanKalmi"> <%= data.github_handle %> </a></li>
+    </ul>
+    <blockquote> <%= data.bio %> </blockquote> 
   </section>
 
-<%- include('./partials/foot') %>
+  <%- include('./partials/foot') %>
