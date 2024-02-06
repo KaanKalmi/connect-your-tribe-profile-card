@@ -49,10 +49,10 @@ img {
   width: 350px;
   height: 500px;
   perspective: 800px;
+  cursor: grabbing;
 }
 
 .container-flip {
-  cursor: grabbing;
   transform: rotateY(180deg);
 }
 
