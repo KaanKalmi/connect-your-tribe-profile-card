@@ -5,7 +5,6 @@ card.addEventListener('click', function() {
 });
 
 let theme = new Audio('images/themesong.mp3');
-
 card.addEventListener('mouseenter', handleMouse);
 card.addEventListener('mouseleave', handleMouse);
 
