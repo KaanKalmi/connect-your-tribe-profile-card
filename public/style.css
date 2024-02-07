@@ -5,11 +5,13 @@
 }
 
 body {
-  height: 100vh;
   overflow: hidden;
-  background: #274c77;
+  background-color: #121212;
+  background: url(/images/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   color: #e7ecef;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif; /*komt een ander font in*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,7 +29,7 @@ h2{
 
 ul {
   font-weight: lighter;
-  font-size: 1.2em;
+  font-size: 1em;
   list-style: none;
   
   & a{
@@ -43,7 +45,7 @@ blockquote{
 img {
   height: 250px;
   width: 250px;
-  border-radius: 20px;
+  border-radius: 25em;
 }
 
 .container {
@@ -75,7 +77,8 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #6096ba;
+    background: rgba(1, 1, 1, .3);
+    backdrop-filter: blur(5px);
     gap: 2em;
   }
 }
@@ -84,4 +87,3 @@ img {
   transform: rotateY(180deg);
   padding: 2em;
 }
-
