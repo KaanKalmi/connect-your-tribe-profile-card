@@ -7,8 +7,8 @@
 body {
   height: 100vh;
   overflow: hidden;
-  background: #2b2b2b;
-  color: #f1ede8;
+  background: #274c77;
+  color: #e7ecef;
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   justify-content: center;
@@ -24,14 +24,15 @@ h2{
   text-align: center;
   font-weight: light;
 }
+
 ul {
   font-weight: lighter;
   font-size: 1.2em;
-  text-decoration: none;
   list-style: none;
-}
-a{
-  color: #2b2b2b;
+  
+  & a{
+    color: #e7ecef;
+  }
 }
 
 blockquote{
@@ -60,37 +61,27 @@ img {
   height: 100%;
   width: 100%;
   position: relative;
-  border-radius: 2em;
-  color: #2B2B2B;
+  border-radius: 2.5em;
   transition: transform 1.2s;
   transform-style: preserve-3d;
-}
 
-.front, .back {
-  height: 100%;
-  width: 100%;
-  border-radius: 2rem;
-  position: absolute;
-  backface-visibility: hidden;
-}
-
-.front {
-  background: #CDC0B1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2em;
+  & .front, .back {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #6096ba;
+    gap: 2em;
+  }
 }
 
 .back {
-  background: #CDC0B1;
-  transform: rotateY(-180deg);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  transform: rotateY(180deg);
   padding: 2em;
-  gap: 2em;
 }
 
