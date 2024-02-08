@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
   height: 100vh;
   overflow: hidden;
@@ -9,32 +8,19 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   color: #e7ecef;
-  font-family: Arial, Helvetica, sans-serif; /*komt een ander font in*/
+  font-family: Arial, Helvetica, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-h1 {
-  font-size: 2em;
-  font-weight: bold;
-}
-
-h2{
-  text-align: center;
-  font-weight: light;
-}
-
+h1 { font-size: 2em; font-weight: bold; }
+h2{ text-align: center; font-weight: light; }
 ul {
   font-weight: lighter;
   font-size: 1em;
   list-style: none;
-  
-  & a{
-    color: #e7ecef;
-  }
+  & a{ color: #e7ecef; }
 }
-
 blockquote{
   max-width: 40ch;
   font-size: 12px;
@@ -45,18 +31,13 @@ img {
   width: 250px;
   border-radius: 25em;
 }
-
 .container {
   width: 350px;
   height: 500px;
   perspective: 800px;
   cursor: grabbing;
 }
-
-.container-flip {
-  transform: rotateY(180deg);
-}
-
+.container-flip { transform: rotateY(180deg); }
 .card {
   height: 100%;
   width: 100%;
@@ -65,7 +46,6 @@ img {
   transition: transform 1.2s;
   transform-style: preserve-3d;
   z-index: 2;
-
   & .front, .back {
     height: 100%;
     width: 100%;
@@ -82,12 +62,7 @@ img {
     z-index: 2;
   }
 }
-
-.back {
-  transform: rotateY(180deg);
-  padding: 2em;
-}
-
+.back { transform: rotateY(180deg); padding: 2em; }
 .shadowlight{
   background-color: rgba(250, 239, 239, 0.064);
   filter: blur(3000px) brightness(9) drop-shadow(0 20px 500px rgba(250, 239, 239, 9));
@@ -107,5 +82,4 @@ img {
     height: 100%;
     
   }
-
 }
