@@ -1,3 +1,2 @@
 let card=document.querySelector(".card"),theme;function handleMouse(e){theme=theme||new Audio("images/themesong.mp3"),"mouseenter"===e.type?(theme.play(),console.log("Mouse enter!")):"mouseleave"===e.type&&(theme.pause(),console.log("Mouse leave!"))}card.addEventListener("click",function(){card.classList.toggle("container-flip")}),card.addEventListener("mouseenter",handleMouse),card.addEventListener("mouseleave",handleMouse);
-// defer op audio zodat de audio pas wordt geladen als de gebruiker op de kaart klikt,
-// dit zorgt voor een snellere laadtijd van de pagina.
+// defer op audio zodat de audio pas wordt geladen als de gebruiker op de kaart klikt, dit is beter voor de performance en ook heb k het in 1 lijn gezet omdat ik het moest minifyen voor lighthouse
